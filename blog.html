@@ -300,6 +300,22 @@
 
             <!--Next Blog Post-->
 
+             <div class="blogPost">
+                <h4>6/20/2017</h4>
+                <h3>Intro To Backend, Express.js, & Mustache</h3>
+                <p class="content">This week started out with an intro to backend technologies. On Monday, June, 19, 2017, we got an overview of the OSI model, how networks work, and what servers actually are. I learned that backend and servers are synonomous. Whenever someone mentions the backend, they are refering to servers. I learned that that applications use GET, POST, PUT, or DELETE to change, add, request, or alter data from the server. Something else I found interesting is that an API is simply a server. I learned about methods like app.get, app.use, and app.post. I learned about route's and the purpose and importance of both the request to the server and response from the server.
+                </p>
+                <p>Today, we went over a templating node module called mustache that allows developers to pass in information via variables, loop through arrays, and create conditional statements using a modified version of HTML. To pass in a variable via Mustache, you would do {{variableName}}. To run a loop through an array you would do {{#arrayName}} --some content-- {{/arrayName}}. To make a conditional, you would do the following for true {{#someArrayOrObject}} ---some content-- and {{^someArrayOrObject}} for false. It looks confusing and honestly, I am a little confused, but I know I will get it in time.
+                </p>
+                <p>Our project for the day was to spin up a server using Express.js and create a user directory for a list of fictitional users that are robots. The array they gave us consisted of a about 30 objects who contained key's that consisted of an ID, image, name, location, and job description. Our goal was to spin up a server, use the Mustache model to loop through the information, pass in certain value's of particular key's, and create an elegent, organized display of the users.</p>
+                <p>John, a cohort who I have mentioned in prior posts, and I were working on adding an event listener to the profiles that would allow you to click on any of the profiles, navigate you to route like '/users/:id' where 'id' would be the ID of a particular robot and he page would dynamically change using Mustache variables. The page would ultimately be passing in data from the array of objects that corresponded to the ID given. Although we have not yet figured out how to accomplish this on 'click', we were able to use request parameters to give us a page dedicated to the robot who's ID was passed into the URL (i.e. 'localhost:3000/users/3' would give a profile on a robot with an ID of 3). </p>
+                <p>If you want to take a look at the application I am talking about, you can check it out<a href="https://github.com/keeganthomp/aUserDirectory">here</a>.
+                    </p>
+
+            </div>
+
+            <!--Next Blog Post-->
+
         </div>
 
 
