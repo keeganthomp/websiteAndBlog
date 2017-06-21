@@ -1,5 +1,6 @@
-html {
+body {
   background: url('./Images/blueInkF.jpg') no-repeat center center fixed;
+  position: absolute;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -202,6 +203,10 @@ a:visited {
 
   nav.sideNav p {
    margin: 0px; 
+  }
+
+  nav.sideNav {
+    margin: 0;
   }
 
 }
