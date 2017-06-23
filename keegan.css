@@ -111,6 +111,8 @@ a:visited {
   margin-right: 5%;
   text-align: center;
   font-family: 'Josefin Sans';
+  overflow: hidden;
+  height: 95%;
 }
 
 .blogPost {

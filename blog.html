@@ -293,7 +293,7 @@
                     into perspective and allowed me to feel OK with not knowing even a fraction of it. Hell, you HAVE to
                     be OK with not knowing everything. The biggest take-away I took from the field trip was that deveopers
                     are first, problem solvers, and second, coders. Problem solving is everything in software developement.</p>
-                <p>If you want to take a look at the Soundcloud app I mentioned above, you can check it out <a href="https://github.com/keeganthomp/weekFourProject">here</a>.
+                <p>If you want to take a look at the Soundcloud app I mentioned above, you can check it out<a href="https://github.com/keeganthomp/weekFourProject"> here</a>.
                     Cheers! :)</p>
 
             </div>
@@ -309,7 +309,23 @@
                 </p>
                 <p>Our project for the day was to spin up a server using Express.js and create a user directory for a list of fictitional users that are robots. The array they gave us consisted of a about 30 objects who contained key's that consisted of an ID, image, name, location, and job description. Our goal was to spin up a server, use the Mustache model to loop through the information, pass in certain value's of particular key's, and create an elegent, organized display of the users.</p>
                 <p>John, a cohort who I have mentioned in prior posts, and I were working on adding an event listener to the profiles that would allow you to click on any of the profiles, navigate you to route like '/users/:id' where 'id' would be the ID of a particular robot and he page would dynamically change using Mustache variables. The page would ultimately be passing in data from the array of objects that corresponded to the ID given. Although we have not yet figured out how to accomplish this on 'click', we were able to use request parameters to give us a page dedicated to the robot who's ID was passed into the URL (i.e. 'localhost:3000/users/3' would give a profile on a robot with an ID of 3). </p>
-                <p>If you want to take a look at the application I am talking about, you can check it out<a href="https://github.com/keeganthomp/aUserDirectory">here</a>.
+                <p>If you want to take a look at the application I am talking about, you can check it out<a href="https://github.com/keeganthomp/aUserDirectory"> here</a>.
+                    </p>
+
+            </div>
+
+            <!--Next Blog Post-->
+
+            <div class="blogPost">
+                <h4>6/22/2017</h4>
+                <h3>Node, NPM, Routes, Client's Request, & Server Responses</h3>
+                <p class="content">The past few days have been conceptually challenging for me. As I might have mentioned previously, I have zero experience with the backend. I had an idea of waht node.js was, but didn't fully understand how it worked or how powerful it can be. The thing that makes node.js so great is it's modules (or packages). Node.js has more packages for it than any other backend technology. Lately, we have been using express, mustache-express, body-parser, express-validator, and express-sessions. 
+                </p>
+                <p>Today, we went over routes vs. paths, rendering vs. redirecting, cookies, and sessions. Routes are simply the route a devloper wants to send or get data through, while the path contins a specific destination. Stackoverflow defines rendering and redirect like the following: "res.render() will render the view with data passed to it, res.redirect() will redirect a user to another page (at which point the request starts over)". Where 'res' would be the response from the server. Cookies save the user's session data, are statefull (have data), and reside on the client (a user's computers'). A session is the period of time when the user is on an application and reside on the server. Devlopers will typically set a maximum length of time a session can be live (i.e. 15 minutes).
+                </p>
+                <p>Our project for the day was to create an express server application that would allow a user to signup, login, and then view their custom login page based on server-side authorization. The project also used server side rendering to serve the HTML (mustache) files. After setting up the boiler plate for my express server and installing the modules I would need, I began to set routes for the root page, signup page, login page, and profile page. Corresponding mustache files were made for each. At a high level, the public folder containing all the mustache and css files is set statically, a user then goes to the home page, "/", clicks either signup or login, is then routed to eaither, "/signup" or "/login", fills out a form, the form sends data back to the server through either the "/users" or "/login" route, and then are taken to their personal profile page "/profile", where they prompted with a custom greeting message.</p>
+                <p>This project was difficult, but I learned a shit ton from it. I'm still struggling a bit with the authorization functions we went over in class, but feel a hell of alot better about it than I did two days ago. Backend is pretty rad, but I am for sure leaning more towards focusing on front-end. I like that the front-end has less 'convention'. It just has so much more room for creativity. </p>
+                <p>If you want to take a look at the application I am talking about, you can check it out<a href="https://github.com/keeganthomp/userProfile"> here</a>.
                     </p>
 
             </div>
