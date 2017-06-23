@@ -111,8 +111,6 @@ a:visited {
   margin-right: 5%;
   text-align: center;
   font-family: 'Josefin Sans';
-  overflow: hidden;
-  height: 95%;
 }
 
 .blogPost {
@@ -150,8 +148,6 @@ a:visited {
   top: 22rem;
 }
 
-
-
 @media (max-width: 820px) {
   .sideNav {
     position: fixed;
@@ -161,6 +157,10 @@ a:visited {
     background: white;
     width: 100%;
     justify-content: space-around;
+  }
+
+  .blogBody {
+    background: none;
   }
 
   .links {
@@ -173,8 +173,8 @@ a:visited {
   }
 
   #blogContainer {
-    margin-top: 100px;;
-    width: 100%;    
+    margin-top: 100px;
+    width: 100%;
   }
 
   .blogWrapper {
@@ -200,6 +200,7 @@ a:visited {
     width: 100%;
     position: none;
     right: 0px;
+    top: 14rem;
   }
 
   .title {
@@ -207,11 +208,10 @@ a:visited {
   }
 
   nav.sideNav p {
-   margin: 0px; 
+    margin: 0px;
   }
 
   nav.sideNav {
     margin: 0;
   }
-
 }
