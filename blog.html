@@ -332,6 +332,22 @@
 
             <!--Next Blog Post-->
 
+            <div class="blogPost">
+                <h4>6/26/2017</h4>
+                <h3>Model, View, Controller</h3>
+                <p class="content">The past couple of days, we have been going over server side rendering more in depth and reviewing a type of heiarchy called Model, View, Controller (MVC). In an MVC heiarchy the model is the data, the controller are the routes, and the view is the html. The CSS and front end JS both sit in a 'public folder that is set staticlly via express. 
+                </p>
+                <p>Our weekend project for last week was to build a word guessing game, like hangman, but the entire application must be served from the backend (i.e. server side). I struggled a good deal of trouble with setting up the rendering, responses, routes, and middleware correctly, but eventually got it down. I was having difficulty passing in the correct data to the rendered pages so the templating engine could have access to them. It finally clicked with me that the data you pass to a rendered page is done so through the form of an object. The object key's are equavilent to variable names to mustache. After I fugured this out, I was moving. The next part I struggled with initally was when to use .redirect or .render. I then figured out that a devloper will typically 'redirect' when dealing with a post and render when dealing with a get. Although this is not an absolute rule, it seems to follow suit most of the time.
+                </p>
+                <p>It took me hours to conceptually understand that node is simply Javascript and I can write functions on the server just like I would on the front end. Once this clicked with me, I was moving even faster in my developement process. Our assignment for this afternoon, was to take what we had learned from today regarding the MVC heairchy and refactor our word guessing application to fit in that structure. Prior to this refactor, we had all of our routes, variables, data, logic, and middleware in one file. When a file has so much going on, it makes it difficult to debug and even more difficult to read. There is no syntatic sugar with a file containg such a range of information.</p>
+                <p>This word guessing game is by far, the most proud I am of a project, as it was the most challengin for me. Although I am not quite done with refactor yet, I do have a good idea of how to accomplish and what to 'require' to format the application into a MVC format.</p>
+                <p>If you want to take a look at the application I am talking about, you can check it out<a href="https://github.com/keeganthomp/wordGuessingGame"> here</a>.
+                    </p>
+
+            </div>
+
+            <!--Next Blog Post-->
+
         </div>
 
 
