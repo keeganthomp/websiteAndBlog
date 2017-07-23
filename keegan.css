@@ -1,18 +1,21 @@
 body {
-  background: url('./Images/blueInkF.jpg') no-repeat center center fixed;
+  /*background: url('./Images/blueInkF.jpg') no-repeat center center fixed;
   position: absolute;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   margin: 0;
   height: 100%;
   width: 100%;
 }
 
+
+
+
 .mainWrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .homeWrapper {
@@ -20,7 +23,6 @@ body {
   flex-direction: column;
   position: relative;
   top: 20rem;
-  right: 5rem;
   color: #0148A4;
   font-family: 'Josefin Sans';
   width: 48%;
