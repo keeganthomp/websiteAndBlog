@@ -1,5 +1,6 @@
-console.log("See below for key: \n spacebar: more info \n esc: home page");
-console.log("line one \nline two");
+console.log(
+  "////See below for directions//// \n \n spacebar: more info \n esc: home page"
+);
 
 const main = document.querySelector("#mainContent");
 const orignalPage = main.innerHTML;
@@ -70,7 +71,6 @@ document.body.addEventListener("keyup", e => {
       return [e.title, e.img];
     });
     changeMainContent(content.projects.projectHeader, projects.join(" "));
-    console.log("that's all folks");
     counter = 0;
   } else if (e.keyCode == 27) {
     main.innerHTML = orignalPage;
