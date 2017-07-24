@@ -1,10 +1,6 @@
-console.log(
-  "////See below for directions//// \n \n spacebar: more info \n esc: home page"
-);
-
+console.log("////See below for directions//// \n \n spacebar: more info \n esc: home page");
 const main = document.querySelector("#mainContent");
 const orignalPage = main.innerHTML;
-
 const newDiv = document.createElement("div");
 const newHeader = document.createElement("h1");
 const newParagraph = document.createElement("p");
@@ -14,21 +10,18 @@ var counter = 0;
 const content = {
   about: {
     aboutHeader: "About Me",
-    aboutContent:
-      "I am a craftsman of code <br> I love all things Javascript <br> I am a dog lover <br> I am a fitness enthusiast."
+    aboutContent: "I am a craftsman of code <br> I love all things Javascript <br> I am a dog lover <br> I am a fitness enthusiast."
   },
 
   contact: {
     contactHeader: "Contact Me",
-    contactContent:
-      "Feel free to email me at keegant1992@gmail.com or text me at (334)-618-9523"
+    contactContent: "Email: keegant1992@gmail.com <br> Cell: (334)-618-9523"
   },
   projects: {
     projectHeader: "My Projects",
-    projectContent: [
-      {
+    projectContent: [{
         title: "Title One",
-        imge: "somelink1.com"
+        img: "somelink1.com"
       },
       {
         title: "Title Two",
@@ -51,8 +44,10 @@ function changeMainContent(h, p) {
   main.appendChild(newDiv);
   newDiv.classList.add("myContent");
   newDiv.appendChild(newHeader);
+  newHeader.classList.add("contentHeader");
   newHeader.innerHTML = h;
   newDiv.appendChild(newParagraph);
+  newParagraph.classList.add("content");
   newParagraph.innerHTML = p;
 }
 
@@ -68,9 +63,9 @@ document.body.addEventListener("keyup", e => {
     counter += 1;
   } else if (e.keyCode == 32 && counter == 2) {
     let projects = content.projects.projectContent.map(e => {
-      return [e.title, e.img];
+      return [e.title, e.img].join(" ");
     });
-    changeMainContent(content.projects.projectHeader, projects.join(" "));
+    changeMainContent(content.projects.projectHeader, projects.join("<br>"));
     counter = 0;
   } else if (e.keyCode == 27) {
     main.innerHTML = orignalPage;
