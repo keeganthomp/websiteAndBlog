@@ -4,15 +4,15 @@ const orignalPage = main.innerHTML;
 const newDiv = document.createElement("div");
 const newHeader = document.createElement("h1");
 const newParagraph = document.createElement("p");
+const newImage = document.createElement("img");
 
 var counter = 0;
 
 const content = {
   about: {
     aboutHeader: "About Me",
-    aboutContent: "I am a craftsman of code <br> I love all things Javascript <br> I am a dog lover <br> I am a fitness enthusiast."
+    aboutContent: "MY name is Keegan Thompson and I love Software Engineering. I thoroughly enjoy working with Javascript. I enjoy working with the both the front end and back-end, however, I do prefer working with front-end technologies more."
   },
-
   contact: {
     contactHeader: "Contact Me",
     contactContent: "Email: keegant1992@gmail.com <br> Cell: (334)-618-9523"
@@ -50,6 +50,8 @@ function changeMainContent(h, p) {
   newParagraph.classList.add("content");
   newParagraph.innerHTML = p;
 }
+
+
 
 document.body.addEventListener("keyup", e => {
   if (e.keyCode == 32 && counter == 0) {
