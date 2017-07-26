@@ -61,7 +61,7 @@ function changeMainContent(h, p) {
 
 function createImage(i) {
   let newImage = document.createElement("img");
-  newDiv.appendChild(newImage);
+  newParagraph.appendChild(newImage);
   newImage.src = i;
 }
 
@@ -76,6 +76,8 @@ document.body.addEventListener("keyup", e => {
     );
     counter += 1;
   } else if (e.keyCode == 32 && counter == 2) {
+    counter = 0;
+    console.log(counter);
     main.innerHTML = "";
     newParagraph.innerHTML = "";
     main.appendChild(newDiv);
@@ -83,8 +85,10 @@ document.body.addEventListener("keyup", e => {
     newDiv.appendChild(newHeader);
     newHeader.classList.add("contentHeader");
     newHeader.innerHTML = "My Projects";
+    newDiv.appendChild(newParagraph);
+    newParagraph.classList.add("content");
     let projects = content.projects.projectContent.map(e => {
-      return createImage(e.img);
+      createImage(e.img);
     });
   } else if (e.keyCode == 27) {
     main.innerHTML = orignalPage;
