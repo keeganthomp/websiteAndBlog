@@ -11,11 +11,11 @@
 
 <body class="blogBody">
     <div class="blogWrapper">
-        <nav class="sideNav">
+        <!--<nav class="sideNav">
             <p><a class="links" href="index.html">HOME</a></p>
             <p><a class="links" href="blog.html">CONTACT</a></p>
             <p><a class="links" href="blog.html">BLOG</a></p>
-        </nav>
+        </nav>-->
         <div id="blogContainer">
             <h1 class="blogTitle">BLOG</h1>
             <div class="blogPost">
@@ -300,17 +300,38 @@
 
             <!--Next Blog Post-->
 
-             <div class="blogPost">
+            <div class="blogPost">
                 <h4>6/20/2017</h4>
                 <h3>Intro To Backend, Express.js, & Mustache</h3>
-                <p class="content">This week started out with an intro to backend technologies. On Monday, June, 19, 2017, we got an overview of the OSI model, how networks work, and what servers actually are. I learned that backend and servers are synonomous. Whenever someone mentions the backend, they are refering to servers. I learned that that applications use GET, POST, PUT, or DELETE to change, add, request, or alter data from the server. Something else I found interesting is that an API is simply a server. I learned about methods like app.get, app.use, and app.post. I learned about route's and the purpose and importance of both the request to the server and response from the server.
+                <p class="content">This week started out with an intro to backend technologies. On Monday, June, 19, 2017, we got an overview
+                    of the OSI model, how networks work, and what servers actually are. I learned that backend and servers
+                    are synonomous. Whenever someone mentions the backend, they are refering to servers. I learned that that
+                    applications use GET, POST, PUT, or DELETE to change, add, request, or alter data from the server. Something
+                    else I found interesting is that an API is simply a server. I learned about methods like app.get, app.use,
+                    and app.post. I learned about route's and the purpose and importance of both the request to the server
+                    and response from the server.
                 </p>
-                <p>Today, we went over a templating node module called mustache that allows developers to pass in information via variables, loop through arrays, and create conditional statements using a modified version of HTML. To pass in a variable via Mustache, you would do {{variableName}}. To run a loop through an array you would do {{#arrayName}} --some content-- {{/arrayName}}. To make a conditional, you would do the following for true {{#someArrayOrObject}} ---some content-- and {{^someArrayOrObject}} for false. It looks confusing and honestly, I am a little confused, but I know I will get it in time.
+                <p>Today, we went over a templating node module called mustache that allows developers to pass in information
+                    via variables, loop through arrays, and create conditional statements using a modified version of HTML.
+                    To pass in a variable via Mustache, you would do {{variableName}}. To run a loop through an array you
+                    would do {{#arrayName}} --some content-- {{/arrayName}}. To make a conditional, you would do the following
+                    for true {{#someArrayOrObject}} ---some content-- and {{^someArrayOrObject}} for false. It looks confusing
+                    and honestly, I am a little confused, but I know I will get it in time.
                 </p>
-                <p>Our project for the day was to spin up a server using Express.js and create a user directory for a list of fictitional users that are robots. The array they gave us consisted of a about 30 objects who contained key's that consisted of an ID, image, name, location, and job description. Our goal was to spin up a server, use the Mustache model to loop through the information, pass in certain value's of particular key's, and create an elegent, organized display of the users.</p>
-                <p>John, a cohort who I have mentioned in prior posts, and I were working on adding an event listener to the profiles that would allow you to click on any of the profiles, navigate you to route like '/users/:id' where 'id' would be the ID of a particular robot and he page would dynamically change using Mustache variables. The page would ultimately be passing in data from the array of objects that corresponded to the ID given. Although we have not yet figured out how to accomplish this on 'click', we were able to use request parameters to give us a page dedicated to the robot who's ID was passed into the URL (i.e. 'localhost:3000/users/3' would give a profile on a robot with an ID of 3). </p>
+                <p>Our project for the day was to spin up a server using Express.js and create a user directory for a list of
+                    fictitional users that are robots. The array they gave us consisted of a about 30 objects who contained
+                    key's that consisted of an ID, image, name, location, and job description. Our goal was to spin up a
+                    server, use the Mustache model to loop through the information, pass in certain value's of particular
+                    key's, and create an elegent, organized display of the users.</p>
+                <p>John, a cohort who I have mentioned in prior posts, and I were working on adding an event listener to the
+                    profiles that would allow you to click on any of the profiles, navigate you to route like '/users/:id'
+                    where 'id' would be the ID of a particular robot and he page would dynamically change using Mustache
+                    variables. The page would ultimately be passing in data from the array of objects that corresponded to
+                    the ID given. Although we have not yet figured out how to accomplish this on 'click', we were able to
+                    use request parameters to give us a page dedicated to the robot who's ID was passed into the URL (i.e.
+                    'localhost:3000/users/3' would give a profile on a robot with an ID of 3). </p>
                 <p>If you want to take a look at the application I am talking about, you can check it out<a href="https://github.com/keeganthomp/aUserDirectory"> here</a>.
-                    </p>
+                </p>
 
             </div>
 
@@ -319,14 +340,36 @@
             <div class="blogPost">
                 <h4>6/22/2017</h4>
                 <h3>Node, NPM, Routes, Client's Request, & Server Responses</h3>
-                <p class="content">The past few days have been conceptually challenging for me. As I might have mentioned previously, I have zero experience with the backend. I had an idea of waht node.js was, but didn't fully understand how it worked or how powerful it can be. The thing that makes node.js so great is it's modules (or packages). Node.js has more packages for it than any other backend technology. Lately, we have been using express, mustache-express, body-parser, express-validator, and express-sessions. 
+                <p class="content">The past few days have been conceptually challenging for me. As I might have mentioned previously, I have
+                    zero experience with the backend. I had an idea of waht node.js was, but didn't fully understand how
+                    it worked or how powerful it can be. The thing that makes node.js so great is it's modules (or packages).
+                    Node.js has more packages for it than any other backend technology. Lately, we have been using express,
+                    mustache-express, body-parser, express-validator, and express-sessions.
                 </p>
-                <p>Today, we went over routes vs. paths, rendering vs. redirecting, cookies, and sessions. Routes are simply the route a devloper wants to send or get data through, while the path contins a specific destination. Stackoverflow defines rendering and redirect like the following: "res.render() will render the view with data passed to it, res.redirect() will redirect a user to another page (at which point the request starts over)". Where 'res' would be the response from the server. Cookies save the user's session data, are statefull (have data), and reside on the client (a user's computers'). A session is the period of time when the user is on an application and reside on the server. Devlopers will typically set a maximum length of time a session can be live (i.e. 15 minutes).
+                <p>Today, we went over routes vs. paths, rendering vs. redirecting, cookies, and sessions. Routes are simply
+                    the route a devloper wants to send or get data through, while the path contins a specific destination.
+                    Stackoverflow defines rendering and redirect like the following: "res.render() will render the view with
+                    data passed to it, res.redirect() will redirect a user to another page (at which point the request starts
+                    over)". Where 'res' would be the response from the server. Cookies save the user's session data, are
+                    statefull (have data), and reside on the client (a user's computers'). A session is the period of time
+                    when the user is on an application and reside on the server. Devlopers will typically set a maximum length
+                    of time a session can be live (i.e. 15 minutes).
                 </p>
-                <p>Our project for the day was to create an express server application that would allow a user to signup, login, and then view their custom login page based on server-side authorization. The project also used server side rendering to serve the HTML (mustache) files. After setting up the boiler plate for my express server and installing the modules I would need, I began to set routes for the root page, signup page, login page, and profile page. Corresponding mustache files were made for each. At a high level, the public folder containing all the mustache and css files is set statically, a user then goes to the home page, "/", clicks either signup or login, is then routed to eaither, "/signup" or "/login", fills out a form, the form sends data back to the server through either the "/users" or "/login" route, and then are taken to their personal profile page "/profile", where they prompted with a custom greeting message.</p>
-                <p>This project was difficult, but I learned a shit ton from it. I'm still struggling a bit with the authorization functions we went over in class, but feel a hell of alot better about it than I did two days ago. Backend is pretty rad, but I am for sure leaning more towards focusing on front-end. I like that the front-end has less 'convention'. It just has so much more room for creativity. </p>
+                <p>Our project for the day was to create an express server application that would allow a user to signup, login,
+                    and then view their custom login page based on server-side authorization. The project also used server
+                    side rendering to serve the HTML (mustache) files. After setting up the boiler plate for my express server
+                    and installing the modules I would need, I began to set routes for the root page, signup page, login
+                    page, and profile page. Corresponding mustache files were made for each. At a high level, the public
+                    folder containing all the mustache and css files is set statically, a user then goes to the home page,
+                    "/", clicks either signup or login, is then routed to eaither, "/signup" or "/login", fills out a form,
+                    the form sends data back to the server through either the "/users" or "/login" route, and then are taken
+                    to their personal profile page "/profile", where they prompted with a custom greeting message.</p>
+                <p>This project was difficult, but I learned a shit ton from it. I'm still struggling a bit with the authorization
+                    functions we went over in class, but feel a hell of alot better about it than I did two days ago. Backend
+                    is pretty rad, but I am for sure leaning more towards focusing on front-end. I like that the front-end
+                    has less 'convention'. It just has so much more room for creativity. </p>
                 <p>If you want to take a look at the application I am talking about, you can check it out<a href="https://github.com/keeganthomp/userProfile"> here</a>.
-                    </p>
+                </p>
 
             </div>
 
@@ -335,14 +378,33 @@
             <div class="blogPost">
                 <h4>6/26/2017</h4>
                 <h3>Model, View, Controller</h3>
-                <p class="content">The past couple of days, we have been going over server side rendering more in depth and reviewing a type of heiarchy called Model, View, Controller (MVC). In an MVC heiarchy the model is the data, the controller are the routes, and the view is the html. The CSS and front end JS both sit in a 'public folder that is set staticlly via express. 
+                <p class="content">The past couple of days, we have been going over server side rendering more in depth and reviewing a type
+                    of heiarchy called Model, View, Controller (MVC). In an MVC heiarchy the model is the data, the controller
+                    are the routes, and the view is the html. The CSS and front end JS both sit in a 'public folder that
+                    is set staticlly via express.
                 </p>
-                <p>Our weekend project for last week was to build a word guessing game, like hangman, but the entire application must be served from the backend (i.e. server side). I struggled a good deal of trouble with setting up the rendering, responses, routes, and middleware correctly, but eventually got it down. I was having difficulty passing in the correct data to the rendered pages so the templating engine could have access to them. It finally clicked with me that the data you pass to a rendered page is done so through the form of an object. The object key's are equavilent to variable names to mustache. After I fugured this out, I was moving. The next part I struggled with initally was when to use .redirect or .render. I then figured out that a devloper will typically 'redirect' when dealing with a post and render when dealing with a get. Although this is not an absolute rule, it seems to follow suit most of the time.
+                <p>Our weekend project for last week was to build a word guessing game, like hangman, but the entire application
+                    must be served from the backend (i.e. server side). I struggled a good deal of trouble with setting up
+                    the rendering, responses, routes, and middleware correctly, but eventually got it down. I was having
+                    difficulty passing in the correct data to the rendered pages so the templating engine could have access
+                    to them. It finally clicked with me that the data you pass to a rendered page is done so through the
+                    form of an object. The object key's are equavilent to variable names to mustache. After I fugured this
+                    out, I was moving. The next part I struggled with initally was when to use .redirect or .render. I then
+                    figured out that a devloper will typically 'redirect' when dealing with a post and render when dealing
+                    with a get. Although this is not an absolute rule, it seems to follow suit most of the time.
                 </p>
-                <p>It took me hours to conceptually understand that node is simply Javascript and I can write functions on the server just like I would on the front end. Once this clicked with me, I was moving even faster in my developement process. Our assignment for this afternoon, was to take what we had learned from today regarding the MVC heairchy and refactor our word guessing application to fit in that structure. Prior to this refactor, we had all of our routes, variables, data, logic, and middleware in one file. When a file has so much going on, it makes it difficult to debug and even more difficult to read. There is no syntatic sugar with a file containg such a range of information.</p>
-                <p>This word guessing game is by far, the most proud I am of a project, as it was the most challengin for me. Although I am not quite done with refactor yet, I do have a good idea of how to accomplish and what to 'require' to format the application into a MVC format.</p>
+                <p>It took me hours to conceptually understand that node is simply Javascript and I can write functions on the
+                    server just like I would on the front end. Once this clicked with me, I was moving even faster in my
+                    developement process. Our assignment for this afternoon, was to take what we had learned from today regarding
+                    the MVC heairchy and refactor our word guessing application to fit in that structure. Prior to this refactor,
+                    we had all of our routes, variables, data, logic, and middleware in one file. When a file has so much
+                    going on, it makes it difficult to debug and even more difficult to read. There is no syntatic sugar
+                    with a file containg such a range of information.</p>
+                <p>This word guessing game is by far, the most proud I am of a project, as it was the most challengin for me.
+                    Although I am not quite done with refactor yet, I do have a good idea of how to accomplish and what to
+                    'require' to format the application into a MVC format.</p>
                 <p>If you want to take a look at the application I am talking about, you can check it out<a href="https://github.com/keeganthomp/wordGuessingGame"> here</a>.
-                    </p>
+                </p>
 
             </div>
 
@@ -352,14 +414,39 @@
             <div class="blogPost">
                 <h4>6/29/2017</h4>
                 <h3>ORM's, SQL, and Databses</h3>
-                <p class="content">The later part of this week revolved around learning a Javascript ORM, Sequelizer, SQL, and PostgrSQL. We first dove into SQL and learned the basic SQL commands, SELECT, INSERT, DELETE, FROM, WHERE, and JOIN. SELECT queries are used when retrieving data from a database. INSERT statements are used for inserting data into a database. DELETE statements are used to delete data from a database. The FROM paramater specifies which table you are adding to or manipulating data from. WHERE acts as a filter for your query. JOIN allows developers to access tables from other tables by using primary keys and foreign keys. Although there are many databses, we spent our time working with PostgreSQL which was can accessed via CLI with the 'psql' command.
+                <p class="content">The later part of this week revolved around learning a Javascript ORM, Sequelizer, SQL, and PostgrSQL. We
+                    first dove into SQL and learned the basic SQL commands, SELECT, INSERT, DELETE, FROM, WHERE, and JOIN.
+                    SELECT queries are used when retrieving data from a database. INSERT statements are used for inserting
+                    data into a database. DELETE statements are used to delete data from a database. The FROM paramater specifies
+                    which table you are adding to or manipulating data from. WHERE acts as a filter for your query. JOIN
+                    allows developers to access tables from other tables by using primary keys and foreign keys. Although
+                    there are many databses, we spent our time working with PostgreSQL which was can accessed via CLI with
+                    the 'psql' command.
                 </p>
-                <p>After getting the basics of SQL down, we went into learning an ORM. ORM stands for Object-Relational Mapping. An ORM essentially allows to manipulate database in the language of your choice WITHOUT actually writing SQL. Javascript has an ORM called 'Sequelizer', which we spent two days learning. At a high level, Sequelizer makes sense, but getting into the syntax of it was rather confusing to me. It's pretty damn cool that I am able to manipulate a database with Javascript. If my server is running on Node.js, and I am using sequelizer, then my server configuration and database queries are both using Javascipt. This makes my backend code both efficient and fluid. Setting up Sequlizer, like most ORM's, is a bit of a pain, but once it's initialized and configured, data manipulation isn't too difficult. Although, the documentation is a MUST for any ORM. The hardest part of using sequelizer is remembering the syntax and methods that come with using it. 
+                <p>After getting the basics of SQL down, we went into learning an ORM. ORM stands for Object-Relational Mapping.
+                    An ORM essentially allows to manipulate database in the language of your choice WITHOUT actually writing
+                    SQL. Javascript has an ORM called 'Sequelizer', which we spent two days learning. At a high level, Sequelizer
+                    makes sense, but getting into the syntax of it was rather confusing to me. It's pretty damn cool that
+                    I am able to manipulate a database with Javascript. If my server is running on Node.js, and I am using
+                    sequelizer, then my server configuration and database queries are both using Javascipt. This makes my
+                    backend code both efficient and fluid. Setting up Sequlizer, like most ORM's, is a bit of a pain, but
+                    once it's initialized and configured, data manipulation isn't too difficult. Although, the documentation
+                    is a MUST for any ORM. The hardest part of using sequelizer is remembering the syntax and methods that
+                    come with using it.
                 </p>
-                <p>Our project on Wednesday was to take our todo list app we built on an express server, and save the todos to a database that can then be accesses even if the server is restarted. Our weekend project that was assigned this afternoon, was to take our music player app and save the user's search results to a database using Sequelizer. This will allow a user to reference any past search results they have made when visiting the music player app.</p>
-                <p>It's pretty fucking cool to be building full stack applications, but introducing a database into an already existing application is rather difficult. I was busy this afternoon getting my refactor of my todo to be fully functional and aesthetically appealing. I was also working on refactoring my word guess app to have seperate controllers for each route, so I have not yet gotten to 'Sequelizing' my music player app. My goal is to have my music player app saving queries to a Postgres database by the end of the day....But we will see how that goes. </p>
+                <p>Our project on Wednesday was to take our todo list app we built on an express server, and save the todos
+                    to a database that can then be accesses even if the server is restarted. Our weekend project that was
+                    assigned this afternoon, was to take our music player app and save the user's search results to a database
+                    using Sequelizer. This will allow a user to reference any past search results they have made when visiting
+                    the music player app.</p>
+                <p>It's pretty fucking cool to be building full stack applications, but introducing a database into an already
+                    existing application is rather difficult. I was busy this afternoon getting my refactor of my todo to
+                    be fully functional and aesthetically appealing. I was also working on refactoring my word guess app
+                    to have seperate controllers for each route, so I have not yet gotten to 'Sequelizing' my music player
+                    app. My goal is to have my music player app saving queries to a Postgres database by the end of the day....But
+                    we will see how that goes. </p>
                 <p>If you want to take a look at the refactored todo app I am talking about, you can check it out<a href="https://github.com/keeganthomp/expressToDoApp/tree/sequalize"> here</a>.
-                    </p>
+                </p>
 
             </div>
 
@@ -369,14 +456,32 @@
             <div class="blogPost">
                 <h4>7/05/2017</h4>
                 <h3>MongoDB, Primary Keys, & Foreign Keys</h3>
-                <p class="content">This week we have been going over different types of databases other than relational databases or SQL databases. Relational databases work off of a schema and have tables. They are structured and as such work with a structured query language like SQL. Databases that are not structured are referred to as no-sql databases. We have been learning MongoDB this week which is an example of a no-sql database. Instead of tables, the data is stored in what is like one massive document. Data does not have to have specific columns. The data going into a no-sql database can be unique to itself.
+                <p class="content">This week we have been going over different types of databases other than relational databases or SQL databases.
+                    Relational databases work off of a schema and have tables. They are structured and as such work with
+                    a structured query language like SQL. Databases that are not structured are referred to as no-sql databases.
+                    We have been learning MongoDB this week which is an example of a no-sql database. Instead of tables,
+                    the data is stored in what is like one massive document. Data does not have to have specific columns.
+                    The data going into a no-sql database can be unique to itself.
                 </p>
-                <p>Today we refactored a project that was simply pulling in data from JSON file to be pulling data in from MongoDB. I imported the JSON file to database that was created via Mongo, and used vanilla mongo syntax to pull data from the DB into a rendered page of my choosing. I was doing server-side rendering using mustache and the data from the mongodb. 
+                <p>Today we refactored a project that was simply pulling in data from JSON file to be pulling data in from MongoDB.
+                    I imported the JSON file to database that was created via Mongo, and used vanilla mongo syntax to pull
+                    data from the DB into a rendered page of my choosing. I was doing server-side rendering using mustache
+                    and the data from the mongodb.
                 </p>
-                <p>So far, I seem to be drawn to Mongo more than Postrgres. I like that the data in Mongo does not have to be structurerd. If you want to retrieve any data from a no-sql database, you can query it, just like you can a relational database. To me, no-sql databases seem to make the most sense unless you are woeking with an enterprise who has a great deal of red tape and a strong technological architecture.</p>
-                <p>Our project for the wee was given to us on Monday, three days earlier than normal. The reason our project was assigned to us so early is due to that fact that IT IS ALOT. We are essentially building a server-side renndered Twiter clone. It must consist of a signup, login, message board, have the ability to like and delete posts. And also save sessions, and go through authorization. I am so stoked on this project and so far have given my application the ability to create users, save them to a Postgres DB, be verified at the login, and take the user to a custom profile page where they can submit a message (or a tweet). Although my application does not good aesthetically, the logic is getting there. My focus is getting all the logic an algorithms in place, then I will worry about the styling. </p>
+                <p>So far, I seem to be drawn to Mongo more than Postrgres. I like that the data in Mongo does not have to be
+                    structurerd. If you want to retrieve any data from a no-sql database, you can query it, just like you
+                    can a relational database. To me, no-sql databases seem to make the most sense unless you are woeking
+                    with an enterprise who has a great deal of red tape and a strong technological architecture.</p>
+                <p>Our project for the wee was given to us on Monday, three days earlier than normal. The reason our project
+                    was assigned to us so early is due to that fact that IT IS ALOT. We are essentially building a server-side
+                    renndered Twiter clone. It must consist of a signup, login, message board, have the ability to like and
+                    delete posts. And also save sessions, and go through authorization. I am so stoked on this project and
+                    so far have given my application the ability to create users, save them to a Postgres DB, be verified
+                    at the login, and take the user to a custom profile page where they can submit a message (or a tweet).
+                    Although my application does not good aesthetically, the logic is getting there. My focus is getting
+                    all the logic an algorithms in place, then I will worry about the styling. </p>
                 <p>If you want to take a look at the twitter clone I mentioned above, you can check it out<a href="https://github.com/keeganthomp/socialMediaApp"> here</a>.
-                    </p>
+                </p>
 
             </div>
 
@@ -385,15 +490,34 @@
             <div class="blogPost">
                 <h4>7/10/2017</h4>
                 <h3>Reflecting, Building a Social Media App, & Choosing a Specialization</h3>
-                <p class="content">Lately, I have been immersed in modern backend technologies inlcuding node, npm, node modules, relational databases, and non relational databases. This knowledge of the backend alognside the front end knowledge we gained in the first month has given me all the tools I need to make any kind of web app there is. As I mentioned earlier, the project we were assigned last week a social media application that used entirely server-side rendering.
+                <p class="content">Lately, I have been immersed in modern backend technologies inlcuding node, npm, node modules, relational
+                    databases, and non relational databases. This knowledge of the backend alognside the front end knowledge
+                    we gained in the first month has given me all the tools I need to make any kind of web app there is.
+                    As I mentioned earlier, the project we were assigned last week a social media application that used entirely
+                    server-side rendering.
                 </p>
                 <p>
-                    The project encapsulateted everything we have learned to date. Front end styling, back end endpoinst (routes), querying the database, using templating engines, saving user's data to a database, and authenticating users. The Iron Yard has been a hell of a ride so far. It has been the most challenging and rewarding thing I have ever been a part of. 
+                    The project encapsulateted everything we have learned to date. Front end styling, back end endpoinst (routes), querying the
+                    database, using templating engines, saving user's data to a database, and authenticating users. The Iron
+                    Yard has been a hell of a ride so far. It has been the most challenging and rewarding thing I have ever
+                    been a part of.
                 </p>
-                <p>The social media app I built is definately one of the most rewarding things I have ver accomplished. It's not Facebook or Twitter, but I am insanely proud of it. It shows me how far I have come and that with the right tools, anything is possible.</p>
-                <p>We are coming up on the end of month two, which means that I will be choosing a 'specialization' for month three. Our options of specialization are either React, Java, or Ruby on Rails. Although, backend technologies intrigue me, I am definately leaning towards React at the moment. I love the creativity that with working with the frontend. I also see a huge shift of the front end doing the majority of the workload. The backend is gradually becoming more and more automated. Do not get me wrong, Backend engineers are still in dire need, but I just like the idea of working with the components that are the driving force. I also feel that I have a pretty solid understanding of node.js, which is growing rapidly in popularity. I love working Javascript. I love that it is an interpreted language and uses hoisting. I have come to love the things that some hate about working with Javascript. Who knows though, I could come out of The Iron Yard working with PHP, Ruby, Java, or .NET. I would be amped to learn any of these technologies, but for now, I want to continue my efforts to get a solid handle of the polorizing language that is ES6.</p>
+                <p>The social media app I built is definately one of the most rewarding things I have ver accomplished. It's
+                    not Facebook or Twitter, but I am insanely proud of it. It shows me how far I have come and that with
+                    the right tools, anything is possible.</p>
+                <p>We are coming up on the end of month two, which means that I will be choosing a 'specialization' for month
+                    three. Our options of specialization are either React, Java, or Ruby on Rails. Although, backend technologies
+                    intrigue me, I am definately leaning towards React at the moment. I love the creativity that with working
+                    with the frontend. I also see a huge shift of the front end doing the majority of the workload. The backend
+                    is gradually becoming more and more automated. Do not get me wrong, Backend engineers are still in dire
+                    need, but I just like the idea of working with the components that are the driving force. I also feel
+                    that I have a pretty solid understanding of node.js, which is growing rapidly in popularity. I love working
+                    Javascript. I love that it is an interpreted language and uses hoisting. I have come to love the things
+                    that some hate about working with Javascript. Who knows though, I could come out of The Iron Yard working
+                    with PHP, Ruby, Java, or .NET. I would be amped to learn any of these technologies, but for now, I want
+                    to continue my efforts to get a solid handle of the polorizing language that is ES6.</p>
                 <p>If you want to take a look at my most recent version of my social media app, you can do so<a href="https://github.com/keeganthomp/socialMediaApp"> here</a>.
-                    </p>
+                </p>
 
             </div>
 
@@ -402,34 +526,78 @@
             <div class="blogPost">
                 <h4>7/18/2017</h4>
                 <h3>More Mongo, API's, Token Authentication, & Higher Level Concepts </h3>
-                <p class="content">The past week has been very rough. Last week, week 8, was the hardest week I have had at The Iron Yard. It was filled with many daily projects that were the size of some of our weekly projects in the past. Ths caused me to become overwhelmed about halfway through week 8. One project that I was excited about was building a vending machine API. This vending machine API was built using node.js and express. We used a piece of software called Postman to post data to routes and get information from routes. This vending machine application simulates all the elements of a RESTful API. You can GET, POST, PUT, and DELETE data from the vendng machine.
+                <p class="content">The past week has been very rough. Last week, week 8, was the hardest week I have had at The Iron Yard. It
+                    was filled with many daily projects that were the size of some of our weekly projects in the past. Ths
+                    caused me to become overwhelmed about halfway through week 8. One project that I was excited about was
+                    building a vending machine API. This vending machine API was built using node.js and express. We used
+                    a piece of software called Postman to post data to routes and get information from routes. This vending
+                    machine application simulates all the elements of a RESTful API. You can GET, POST, PUT, and DELETE data
+                    from the vendng machine.
                 </p>
                 <p>
-                I was using Mongo for my database on the vending machine project and used it once more last week when creating a stat tracker application. This stat tracker application allowed users to create an activity, like climbing stairs, insert a number of stairs climbed on a particular day, and log that data into a database. The application allowed users to update stats daily, delete a stat, update an activity, or delete an activity. For this application, I used token authentication. I uased a node module on the backend called 'jsonWebToken' which allowed me to generate a token for a user. I allowed the users to signup and login. Once the users' username and password is verified, they are given a token. Once the user recieves a token, they may see the data in the stat tracker application.
+                    I was using Mongo for my database on the vending machine project and used it once more last week when creating a stat tracker
+                    application. This stat tracker application allowed users to create an activity, like climbing stairs,
+                    insert a number of stairs climbed on a particular day, and log that data into a database. The application
+                    allowed users to update stats daily, delete a stat, update an activity, or delete an activity. For this
+                    application, I used token authentication. I uased a node module on the backend called 'jsonWebToken'
+                    which allowed me to generate a token for a user. I allowed the users to signup and login. Once the users'
+                    username and password is verified, they are given a token. Once the user recieves a token, they may see
+                    the data in the stat tracker application.
                 </p>
-                <p>Another concept we went over last week was TDD (test driven developement). The idea of TDD is simple, write test before you write code for your application. However, the actual implementation for TDD is not that simple. In Javascript, there are several modules I have been using for writing tests. They are 'Mocha', 'Chai', and 'Supertest'. Mocha and Chai are used for feature testing while supertest is used for testing routes. I do understand that TDD is how programming should be done, but it does add a substantial amount of time to coding applications. I do think that learning curve is rater steep, but do believe that it will get much easier and faster once I learn the sntax and testing habbits of the modules I am using to test. </p>
-                <p>This week I started my specialization with React.js. However, Tanner has spent the first two days going over higher level concepts beore diving into react. We went over prototypes in Javascript, how Javascript does not have true inheritience, prototypal inheritence in Javascript, and the new 'class' keyword in ECMAscript 6. Although classes do not exist in Javascript, this 'syntactic sugar' of the 'class' keyowrd in ES6 makes it much more like other OOP languages. There is a shift within Javascript where ths syntax is beginning to look more and more like other languages. I honestly really enjoy talking about higher level OOP concepts and looking at the more computer science-y things in relation to programming.</p>
+                <p>Another concept we went over last week was TDD (test driven developement). The idea of TDD is simple, write
+                    test before you write code for your application. However, the actual implementation for TDD is not that
+                    simple. In Javascript, there are several modules I have been using for writing tests. They are 'Mocha',
+                    'Chai', and 'Supertest'. Mocha and Chai are used for feature testing while supertest is used for testing
+                    routes. I do understand that TDD is how programming should be done, but it does add a substantial amount
+                    of time to coding applications. I do think that learning curve is rater steep, but do believe that it
+                    will get much easier and faster once I learn the sntax and testing habbits of the modules I am using
+                    to test. </p>
+                <p>This week I started my specialization with React.js. However, Tanner has spent the first two days going over
+                    higher level concepts beore diving into react. We went over prototypes in Javascript, how Javascript
+                    does not have true inheritience, prototypal inheritence in Javascript, and the new 'class' keyword in
+                    ECMAscript 6. Although classes do not exist in Javascript, this 'syntactic sugar' of the 'class' keyowrd
+                    in ES6 makes it much more like other OOP languages. There is a shift within Javascript where ths syntax
+                    is beginning to look more and more like other languages. I honestly really enjoy talking about higher
+                    level OOP concepts and looking at the more computer science-y things in relation to programming.</p>
                 <p>All in all, I am super pumped with my progression and excited to finally dive into react tomorrow.
-                    </p>
-                    <p>Cheers! :)</p>
+                </p>
+                <p>Cheers! :)</p>
 
             </div>
 
             <!--Next Blog Post-->
 
-             <div class="blogPost">
+            <div class="blogPost">
                 <h4>7/23/2017</h4>
                 <h3>So That's React</h3>
-                <p class="content">I have been curious about using for the better part of 7 months now. I was going to introduce myself to React sooner, but I really wanted to have a solid foundation of Javascript before getting into an exensive Javascript library. It was important to me to have a true understanding of how Javascript works and understand all the quirks that belong to Javascript. Let me say, I definately glad I did.
+                <p class="content">I have been curious about using for the better part of 7 months now. I was going to introduce myself to React
+                    sooner, but I really wanted to have a solid foundation of Javascript before getting into an exensive
+                    Javascript library. It was important to me to have a true understanding of how Javascript works and understand
+                    all the quirks that belong to Javascript. Let me say, I definately glad I did.
                 </p>
                 <p>
-                So react uses components to structure applications. Every part of the webpage is a component. The header, the navbar, the sidebar, the footer, everything is a component. This is the best part about react. React uses a thing called a 'key' to keep track of every component and every child in a component. React only renders the part of the site that has changed. This makes react effective, compartmentalized, and fast. React is ideal for websites that are passing alot of data through it. Since react is only updating the components that change, the nodes that are getting new data are the only thing being repainted on the page. React does this by using what is called the 'virtual DOM'. React is constantly comparing the virtual DOM to the actual DOM and if react detects a difference between the two, the repaints the node that changed.
+                    So react uses components to structure applications. Every part of the webpage is a component. The header, the navbar, the
+                    sidebar, the footer, everything is a component. This is the best part about react. React uses a thing
+                    called a 'key' to keep track of every component and every child in a component. React only renders the
+                    part of the site that has changed. This makes react effective, compartmentalized, and fast. React is
+                    ideal for websites that are passing alot of data through it. Since react is only updating the components
+                    that change, the nodes that are getting new data are the only thing being repainted on the page. React
+                    does this by using what is called the 'virtual DOM'. React is constantly comparing the virtual DOM to
+                    the actual DOM and if react detects a difference between the two, the repaints the node that changed.
                 </p>
-                <p>The weird par about react is that it uses JSX. JSX is basically Javascript + XML/HTML. In react, you write html in javascript files. Since you are in a javascript file, you can write Javascript. This makes for a very interesting syntax. React uses state and props to pass data around. State is data that belongs to a particular component, a smart component. Props is data that is passed to a 'dumb component' from it's parent component. It is ideal to have many dumb components and few smart components.  </p>
-                <p>I have built a couple of applications using react, and can say I really do like it. Working with react is like working with custom legos. You build lego pieces (components) that you then put together to make a giant lego structure. I am still new to react, but I am really trying to dive into it and understand as much as possible.</p>
-                <p><a href="https://github.com/keeganthomp/songShareReactApp/tree/master/song-share-react-app">This</a> is the latest  application I made with react. Feel free to check it out.
-                    </p>
-                    <p>React FTW!</p>
+                <p>The weird par about react is that it uses JSX. JSX is basically Javascript + XML/HTML. In react, you write
+                    html in javascript files. Since you are in a javascript file, you can write Javascript. This makes for
+                    a very interesting syntax. React uses state and props to pass data around. State is data that belongs
+                    to a particular component, a smart component. Props is data that is passed to a 'dumb component' from
+                    it's parent component. It is ideal to have many dumb components and few smart components. </p>
+                <p>I have built a couple of applications using react, and can say I really do like it. Working with react is
+                    like working with custom legos. You build lego pieces (components) that you then put together to make
+                    a giant lego structure. I am still new to react, but I am really trying to dive into it and understand
+                    as much as possible.</p>
+                <p><a href="https://github.com/keeganthomp/songShareReactApp/tree/master/song-share-react-app">This</a> is the
+                    latest application I made with react. Feel free to check it out.
+                </p>
+                <p>React FTW!</p>
 
             </div>
 
@@ -438,6 +606,7 @@
 
         </div>
 
+        <script src="./js/blog.js"></script>
 
 </body>
 
