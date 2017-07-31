@@ -603,11 +603,26 @@
 
             <!--Next Blog Post-->
 
+            <div class="blogPost">
+                <h4>7/30/2017</h4>
+                <h3>Components, State, & Props</h3>
+                <p class="content">The past week I have been working in React every day for hours on end. I am beginning to feel familiar with how React Works, and that damn JSX doesn't seem as scary as it did a week ago. In fact, I would argue that I MIGHT actually prefer JSX over HTML. I thouroughly do enjoy writing Javascript in the middle of HTML. To me, JSX tends to be easier to read than hopping back and forth between your HTML and external Javascript file.
+                </p>
+                <p> The most confusing part about working with React was the idea of state and the difference between state and props. I understood what state and props were at a high level, but it took me about 30 hours of working in react to get a good idea of how they differ and when to use each. As I mentioned in an previous post, there are two type of components in react, dumb components and smart components. Something that clicked with me recently was the that you should have AS FEW SMART COMPONENTS AS POSSIBLE in your application. A smart component is component that is managing state (data). I learned (the hard way) that when you have multiple components managing state, shit.gets.confusing. In React, it is vital to think about the architecture of your site throuroughly. You need to think about where your state will live and how you will be passing that state down to child components via props.
+                </p>
+                <p>Props is simply data passed to a child component from a parent component. After working 40+ hours with react this past week, I began to feel more and more comfortable using props, naming the props was passing down, and in which component I should be writing functions. In react, you can pass functions from one component to another in the same manner that you would when passing any other data, via props.  </p>
+                <p>That last thing that I will say about my 'React Immersion' this past week, is the use of inline styling when dealing with react components. Although you can use external stylesheets when working in react, it is best practices to keep your styling within the component itself. This makes sense because when you want to re-use a component, you have it's corresponding styles right there in the render.</p>
+                <p>The latest react project I have been working is a fictitous e-commerce store that sells sneakers. You can take a looka at that bad boy <a href="https://github.com/keeganthomp/reactEcommerceStore">here </a>.
+                </p>
+
+            </div>
+
+            <!--Next Blog Post-->
+
 
         </div>
 
         <script src="./js/blog.js"></script>
-
 </body>
 
 </html>
