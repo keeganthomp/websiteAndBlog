@@ -62,12 +62,21 @@ body {
   margin-top: 20%;
   font-weight: 100;
   margin: 0 25%;
+  font-size: 1.5rem;
 }
 
 .contentHeader {
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 100;
+}
+
+.projectContent {
+  text-align: center;
+  margin-top: 2%;
+  font-weight: 100;
+  margin: 0 25%;
+  font-size: 1.5rem;
 }
 
 .title {
@@ -82,7 +91,7 @@ body {
 
 #mainContent {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 6%;
   font-weight: 100;
 }
 
@@ -101,7 +110,6 @@ body {
 .socialLink:hover {
   color: lightcoral;
   transition: all .5s;
-  
 }
 
 .socialLink:visited {
@@ -136,9 +144,19 @@ h3 {
 a {
   color: lightcoral;
   text-decoration: none;
-  font-family: 'Josefin Sans';  
+  font-family: 'Josefin Sans';
   font-weight: 400;
 }
 
+.projectContent {
+  margin: 0 5%;
+}
 
-x
+.projects {
+  display: flex;
+}
+
+.projectImg {
+  width: 20%;
+  margin: 2%;
+}
