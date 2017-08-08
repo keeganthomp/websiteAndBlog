@@ -619,6 +619,16 @@
 
             <!--Next Blog Post-->
 
+             <div class="blogPost">
+                <h4>8/08/2017</h4>
+                <h3>React & Redux</h3>
+                <p class="content">This past week, I have spent working with and learning Redux. Redux is a state management module that allows developers to keep track of state in one place instead of having state spread across different components. Redux does this through a 'store'. A store in redux is simply a place where state lives. If you want data from the store, you dispatch it to the component you want to use it in. Actually, you technically 'map' state and 'dispatch' actions.
+                </p>
+                <p> Actions in redux are like messages. These actions then get sent to what is called a reducer. The reducer is essentially a function that manipulates data sent over through an action. An action has a payload that is sent to the reducer along with the action itself. A payload is data that is sent through an action to the reducer. Actions are typically used via clicks on buttons. The payload is typically data from an input or form. There are also containers, which hold the components. As mentioned earlier, state is mapped to compnents from the store and actions are dispatched to components. Both of which are done through functions at the bottom of the container or the component itself. 
+                </p>
+                <p>I actually enjoy working with redux and how easy it makes passing state from component to component. The problem with redux is getting the architecture right and remembering to always to clone state through each of the cases in the reducers. Bottom-line, Redux rules, but it truly only makes sense when you are working on a large application with mass amounts of data. I keep hearing about Mobx, which is a simpler approach to state management and WAYYY less cumbersome to set up. I'm stoked to have a use case for Mobx in the near future.</p>
+            </div>
+
 
         </div>
 
