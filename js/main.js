@@ -127,6 +127,10 @@ document.body.addEventListener("keyup", e => {
     window.location.href = "./blog.html";
     newDiv.classList.remove("projectContent");
     newParagraph.classList.remove("projects");
+  } else if (e.keyCode == 80) {
+    window.location.href = "./portfolio.html";
+    newDiv.classList.remove("projectContent");
+    newParagraph.classList.remove("projects");
   } else {
     // alert("Try hitting the spacebar ;)");
   }

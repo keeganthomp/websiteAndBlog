@@ -177,6 +177,40 @@ nav > a {
   font-weight: bold;
 }
 
+.port-img {
+  width: 80%;
+  margin: 20px;
+  transition: all .7s;
+}
+
+.port-img:hover {
+  cursor: pointer;
+  box-shadow: 15px 20px 8px #333333;
+  transition: all .7s;
+  
+}
+
+.portfolio-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-family: 'Josefin Sans';
+  align-content: space-around;
+}
+
+.portfolio-item{
+  width: calc(100%/3);
+}
+
+.port-title {
+  font-family: 'Josefin Sans';
+  font-weight: 100;
+  text-align: center;
+  font-size: 3rem;
+  
+}
+
 @media screen and (max-width: 650px) {
   nav {
     visibility: visible;
