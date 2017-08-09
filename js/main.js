@@ -10,11 +10,11 @@ const newParagraph = document.createElement("p");
 const newLink = document.createElement("a");
 const nav = document.createElement("nav");
 const navBar =
-  "<a id='homeLink' class='homeLink' href='./index.html'>Home</a><a id='aboutLink' class='aboutLink' href='#'>About</a><a id='contactLink' class='contactLink' href='#'>Contact</a><a id='skillLink' class='skillLink' href='#'>Skills</a>";
+  "<a id='homeLink' class='homeLink' href='./index.html'>Home</a><a id='aboutLink' class='portLink' href='#'>Portfolio</a><a id='contactLink' class='contactLink' href='#'>Contact</a>";
 let homeLink = document.querySelector(".homeLink");
 let contactLink = document.querySelector(".contactLink");
 let aboutLink = document.querySelector(".aboutLink");
-let skillLink = document.querySelector(".skillLink");
+let portLink = document.querySelector(".portLink");
 
 aboutLink.addEventListener("click", () => {
   // newDiv.classList.remove("projectContent");
@@ -48,7 +48,7 @@ const content = {
   skills: {
     skillsHeader: "Skills",
     skillsContent:
-      "HTML<br><br>CSS<br><br>Javascript<br><br>ES6<br><br>Node.JS<br><br>React<br><br>Redux<br><br>Mongo/Mongoose<br><br>SQL/Sequelize<br><br>Photoshop<br><br>Wordpress<br><br>VS Code<br><br>"
+      "HTML<br>CSS<br>Javascript<br>ES6<br>Node.JS<br>React<br>Redux<br>Mongo/Mongoose<br>SQL/Sequelize<br>Photoshop<br>Wordpress<br>VS Code<br>"
   }
 };
 
@@ -67,7 +67,7 @@ function changeMainContent(h, p) {
   homeLink = document.querySelector("#homeLink");
   contactLink = document.querySelector("#contactLink");
   aboutLink = document.querySelector("#aboutLink");
-  skillLink = document.querySelector("#skillLink");
+  portLink = document.querySelector(".portLink");
   aboutLink.addEventListener("click", () => {
     changeMainContent(content.about.aboutHeader, content.about.aboutContent);
   });
@@ -78,11 +78,9 @@ function changeMainContent(h, p) {
       content.contact.contactContent
     );
   });
-  skillLink.addEventListener("click", () => {
-    changeMainContent(
-      content.skills.skillsHeader,
-      content.skills.skillsContent
-    );
+  portLink.addEventListener("click", () => {
+    console.log("clicked Port")
+    window.location.href = "./portfolio.html";
   });
   console.log(homeLink);
 }

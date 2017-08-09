@@ -170,7 +170,7 @@ nav {
   visibility: hidden;
 }
 
-nav > a {
+nav>a {
   margin: 10px;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -187,7 +187,6 @@ nav > a {
   cursor: pointer;
   box-shadow: 15px 20px 8px #333333;
   transition: all .7s;
-  
 }
 
 .portfolio-container {
@@ -199,7 +198,7 @@ nav > a {
   align-content: space-around;
 }
 
-.portfolio-item{
+.portfolio-item {
   width: calc(100%/3);
 }
 
@@ -208,19 +207,27 @@ nav > a {
   font-weight: 100;
   text-align: center;
   font-size: 3rem;
-  
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 450px) {
   nav {
     visibility: visible;
   }
   .myContent {
     margin: 0 5%;
   }
-
   code {
     visibility: hidden;
   }
+
+.portfolio-item {
+  width: 100%;
+}
+
+.port-nav {
+  text-align: center;
+  margin-top: 2%;
+}
+
 
 }
