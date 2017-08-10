@@ -10,12 +10,28 @@
 </head>
 
 <body class="blogBody">
+    <div class="topnav" id="myTopnav">
+        <div class="navLinks">
+            <a class="homeLink" href="./index.html">Home</a>
+            <a class="aboutLink" href="./portfolio.html">Portfolio</a>
+            <a class="contactLink" href="./blog.html">Blog</a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="makeNavResponsive()">&#9776;</a>
+    </div>
+    <script>
+        function makeNavResponsive() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    </div>
     <div class="blogWrapper">
-        <!--<nav class="sideNav">
-            <p><a class="links" href="index.html">HOME</a></p>
-            <p><a class="links" href="blog.html">CONTACT</a></p>
-            <p><a class="links" href="blog.html">BLOG</a></p>
-        </nav>-->
+
         <div id="blogContainer">
             <h1 class="blogTitle">BLOG</h1>
             <div class="blogPost">
@@ -606,27 +622,61 @@
             <div class="blogPost">
                 <h4>7/30/2017</h4>
                 <h3>Components, State, & Props</h3>
-                <p class="content">The past week I have been working in React every day for hours on end. I am beginning to feel familiar with how React Works, and that damn JSX doesn't seem as scary as it did a week ago. In fact, I would argue that I MIGHT actually prefer JSX over HTML. I thouroughly do enjoy writing Javascript in the middle of HTML. To me, JSX tends to be easier to read than hopping back and forth between your HTML and external Javascript file.
+                <p class="content">The past week I have been working in React every day for hours on end. I am beginning to feel familiar with
+                    how React Works, and that damn JSX doesn't seem as scary as it did a week ago. In fact, I would argue
+                    that I MIGHT actually prefer JSX over HTML. I thouroughly do enjoy writing Javascript in the middle of
+                    HTML. To me, JSX tends to be easier to read than hopping back and forth between your HTML and external
+                    Javascript file.
                 </p>
-                <p> The most confusing part about working with React was the idea of state and the difference between state and props. I understood what state and props were at a high level, but it took me about 30 hours of working in react to get a good idea of how they differ and when to use each. As I mentioned in an previous post, there are two type of components in react, dumb components and smart components. Something that clicked with me recently was the that you should have AS FEW SMART COMPONENTS AS POSSIBLE in your application. A smart component is component that is managing state (data). I learned (the hard way) that when you have multiple components managing state, shit.gets.confusing. In React, it is vital to think about the architecture of your site throuroughly. You need to think about where your state will live and how you will be passing that state down to child components via props.
+                <p> The most confusing part about working with React was the idea of state and the difference between state and
+                    props. I understood what state and props were at a high level, but it took me about 30 hours of working
+                    in react to get a good idea of how they differ and when to use each. As I mentioned in an previous post,
+                    there are two type of components in react, dumb components and smart components. Something that clicked
+                    with me recently was the that you should have AS FEW SMART COMPONENTS AS POSSIBLE in your application.
+                    A smart component is component that is managing state (data). I learned (the hard way) that when you
+                    have multiple components managing state, shit.gets.confusing. In React, it is vital to think about the
+                    architecture of your site throuroughly. You need to think about where your state will live and how you
+                    will be passing that state down to child components via props.
                 </p>
-                <p>Props is simply data passed to a child component from a parent component. After working 40+ hours with react this past week, I began to feel more and more comfortable using props, naming the props was passing down, and in which component I should be writing functions. In react, you can pass functions from one component to another in the same manner that you would when passing any other data, via props.  </p>
-                <p>That last thing that I will say about my 'React Immersion' this past week, is the use of inline styling when dealing with react components. Although you can use external stylesheets when working in react, it is best practices to keep your styling within the component itself. This makes sense because when you want to re-use a component, you have it's corresponding styles right there in the render.</p>
-                <p>The latest react project I have been working is a fictitous e-commerce store that sells sneakers. You can take a looka at that bad boy <a href="https://github.com/keeganthomp/reactEcommerceStore">here </a>.
+                <p>Props is simply data passed to a child component from a parent component. After working 40+ hours with react
+                    this past week, I began to feel more and more comfortable using props, naming the props was passing down,
+                    and in which component I should be writing functions. In react, you can pass functions from one component
+                    to another in the same manner that you would when passing any other data, via props. </p>
+                <p>That last thing that I will say about my 'React Immersion' this past week, is the use of inline styling when
+                    dealing with react components. Although you can use external stylesheets when working in react, it is
+                    best practices to keep your styling within the component itself. This makes sense because when you want
+                    to re-use a component, you have it's corresponding styles right there in the render.</p>
+                <p>The latest react project I have been working is a fictitous e-commerce store that sells sneakers. You can
+                    take a looka at that bad boy <a href="https://github.com/keeganthomp/reactEcommerceStore">here </a>.
                 </p>
 
             </div>
 
             <!--Next Blog Post-->
 
-             <div class="blogPost">
+            <div class="blogPost">
                 <h4>8/08/2017</h4>
                 <h3>React & Redux</h3>
-                <p class="content">This past week, I have spent working with and learning Redux. Redux is a state management module that allows developers to keep track of state in one place instead of having state spread across different components. Redux does this through a 'store'. A store in redux is simply a place where state lives. If you want data from the store, you dispatch it to the component you want to use it in. Actually, you technically 'map' state and 'dispatch' actions.
+                <p class="content">This past week, I have spent working with and learning Redux. Redux is a state management module that allows
+                    developers to keep track of state in one place instead of having state spread across different components.
+                    Redux does this through a 'store'. A store in redux is simply a place where state lives. If you want
+                    data from the store, you dispatch it to the component you want to use it in. Actually, you technically
+                    'map' state and 'dispatch' actions.
                 </p>
-                <p> Actions in redux are like messages. These actions then get sent to what is called a reducer. The reducer is essentially a function that manipulates data sent over through an action. An action has a payload that is sent to the reducer along with the action itself. A payload is data that is sent through an action to the reducer. Actions are typically used via clicks on buttons. The payload is typically data from an input or form. There are also containers, which hold the components. As mentioned earlier, state is mapped to compnents from the store and actions are dispatched to components. Both of which are done through functions at the bottom of the container or the component itself. 
+                <p> Actions in redux are like messages. These actions then get sent to what is called a reducer. The reducer
+                    is essentially a function that manipulates data sent over through an action. An action has a payload
+                    that is sent to the reducer along with the action itself. A payload is data that is sent through an action
+                    to the reducer. Actions are typically used via clicks on buttons. The payload is typically data from
+                    an input or form. There are also containers, which hold the components. As mentioned earlier, state is
+                    mapped to compnents from the store and actions are dispatched to components. Both of which are done through
+                    functions at the bottom of the container or the component itself.
                 </p>
-                <p>I actually enjoy working with redux and how easy it makes passing state from component to component. The problem with redux is getting the architecture right and remembering to always to clone state through each of the cases in the reducers. Bottom-line, Redux rules, but it truly only makes sense when you are working on a large application with mass amounts of data. I keep hearing about Mobx, which is a simpler approach to state management and WAYYY less cumbersome to set up. I'm stoked to have a use case for Mobx in the near future.</p>
+                <p>I actually enjoy working with redux and how easy it makes passing state from component to component. The
+                    problem with redux is getting the architecture right and remembering to always to clone state through
+                    each of the cases in the reducers. Bottom-line, Redux rules, but it truly only makes sense when you are
+                    working on a large application with mass amounts of data. I keep hearing about Mobx, which is a simpler
+                    approach to state management and WAYYY less cumbersome to set up. I'm stoked to have a use case for Mobx
+                    in the near future.</p>
             </div>
 
 

@@ -10,9 +10,25 @@
 </head>
 
 <body>
-    <nav class="port-nav"><a class="homeLink" href="./index.html">Home</a><a class="aboutLink" href="/portfolio.html">Portfolio</a><a class="contactLink" href="#">Contact</a>
+    <div class="topnav" id="myTopnav">
+        <a class="homeLink" href="./index.html">Home</a>
+        <a class="aboutLink" href="./portfolio.html">Portfolio</a>
+         <a class="contactLink" href="./blog.html">Blog</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="makeNavResponsive()">&#9776;</a>
+        <script>
+            function makeNavResponsive() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
 
-		</nav>
+    </div>
+
+    </nav>
     <h1 class="port-title">PORTFOLIO</h1>
     <div class="portfolio-container">
         <div class="portfolio-item">
@@ -31,7 +47,7 @@
             <a href="http://organicskinden.com/home/"><img class="port-img" src="./Images/organic_den.png" alt=""></a>
         </div>
     </div>
-    	<script src="./js/portfolio.js"></script>
+    <script src="./js/portfolio.js"></script>
 </body>
 
 </html>

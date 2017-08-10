@@ -94,7 +94,7 @@ body {
 
 #mainContent {
   text-align: center;
-  margin-top: 2%;
+  margin-top: 0%;
   font-weight: 100;
 }
 
@@ -166,17 +166,6 @@ a {
   margin: 2%;
 }
 
-nav {
-  visibility: hidden;
-}
-
-nav>a {
-  margin: 10px;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .port-img {
   width: 80%;
   margin: 20px;
@@ -209,6 +198,10 @@ nav>a {
   font-size: 3rem;
 }
 
+#myTopnav {
+  opacity: 0;
+}
+
 @media screen and (max-width: 450px) {
   nav {
     visibility: visible;
@@ -219,15 +212,68 @@ nav>a {
   code {
     visibility: hidden;
   }
-
-.portfolio-item {
-  width: 100%;
+  .portfolio-item {
+    width: 100%;
+  }
+  .port-nav {
+    text-align: center;
+    margin-top: 2%;
+  }
+  #myTopnav {
+    opacity: 1;
+    transition: all 1s;
+  }
+  .topnav {
+    overflow: hidden;
+  }
+  .topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav .icon {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      display: none;
+    text-transform: uppercase;      
+    }
+    .topnav a.icon {
+      display: block;
+    }
+  }
 }
 
-.port-nav {
-  text-align: center;
-  margin-top: 2%;
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-transform: uppercase;
+  }
+  #blogContainer {
+    margin: 0 0%;
+    text-align: center;
+  }
+
+  .socialLink {
+    font-size: 2rem;
+    margin: 0 7%;
+    color: white;
+    transition: all .5s;
 }
-
-
 }
