@@ -10,7 +10,7 @@ const newParagraph = document.createElement("p");
 const newLink = document.createElement("a");
 const nav = document.createElement("nav");
 const navBar =
-  "<a id='homeLink' class='homeLink' href='./index.html'>Home</a><a id='aboutLink' class='portLink' href='#'>Portfolio</a><a id='contactLink' class='contactLink' href='#'>Contact</a>";
+  "";
 let homeLink = document.querySelector(".homeLink");
 let contactLink = document.querySelector(".contactLink");
 let aboutLink = document.querySelector(".aboutLink");
@@ -48,7 +48,7 @@ const content = {
   skills: {
     skillsHeader: "Skills",
     skillsContent:
-      "HTML<br>CSS<br>Javascript<br>ES6<br>Node.JS<br>React<br>Redux<br>Mongo/Mongoose<br>SQL/Sequelize<br>Photoshop<br>Wordpress<br>VS Code<br>"
+      "HTML<br><br>CSS<br><br>Javascript<br><br>ES6<br><br>Node.JS<br><br>React<br><br>Redux<br><br>Mongo/Mongoose<br><br>SQL/Sequelize<br><br>Photoshop<br><br>Wordpress<br><br>VS Code"
   }
 };
 
@@ -68,21 +68,21 @@ function changeMainContent(h, p) {
   contactLink = document.querySelector("#contactLink");
   aboutLink = document.querySelector("#aboutLink");
   portLink = document.querySelector(".portLink");
-  aboutLink.addEventListener("click", () => {
-    changeMainContent(content.about.aboutHeader, content.about.aboutContent);
-  });
-  contactLink.addEventListener("click", () => {
-    console.log(contactLink);
-    changeMainContent(
-      content.contact.contactHeader,
-      content.contact.contactContent
-    );
-  });
-  portLink.addEventListener("click", () => {
-    console.log("clicked Port")
-    window.location.href = "./portfolio.html";
-  });
-  console.log(homeLink);
+  // aboutLink.addEventListener("click", () => {
+  //   changeMainContent(content.about.aboutHeader, content.about.aboutContent);
+  // });
+  // contactLink.addEventListener("click", () => {
+  //   console.log(contactLink);
+  //   changeMainContent(
+  //     content.contact.contactHeader,
+  //     content.contact.contactContent
+  //   );
+  // });
+  // portLink.addEventListener("click", () => {
+  //   console.log("clicked Port")
+  //   window.location.href = "./portfolio.html";
+  // });
+  // console.log(homeLink);
 }
 
 function createImage(i) {
