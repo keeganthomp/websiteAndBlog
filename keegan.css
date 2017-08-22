@@ -137,6 +137,7 @@ body {
 h4 {
   font-family: 'Josefin Sans';
   font-weight: 100;
+  text-align: center;
 }
 
 h3 {
@@ -196,6 +197,11 @@ a {
   font-weight: 100;
   text-align: center;
   font-size: 3rem;
+}
+
+.portfolio-description {
+  margin-top: -15px;
+  font-size: .8rem;
 }
 
 #myTopnav {
