@@ -38,7 +38,7 @@ const content = {
   about: {
     aboutHeader: "About Me",
     aboutContent:
-      "My name is Keegan Thompson and I love web development. What interest me most about tech, is knowing that there is always something new to learn. There is never a day that I do not touch Google or Stackoverflow. This fits my personality perfectly. Although I enjoy working with full-stack technologies, I prefer front-end more. My favorite language to work with is Javascript, especially since => ES6. My favorite library is React. On the back-end, I prefer Node.js. PHP, Java, Go, Ruby/Rails, & Elm are technologies I am stoked about working with in the future. Outside of development, I love spending time with wife and puppies, working out, pretending like I have a sense of fashion, and planning my eventual journey around the world."
+      "My name is Keegan Thompson and I love web development. What interest me most about tech, is knowing that there is always something new to learn. There is never a day that I do not touch Google or Stack Overflow. This fits my personality perfectly. Although I enjoy working with full stack technologies, I prefer working with front end. My favorite language to work with is Javascript, especially since => ES6.  My favorite library is React. On the back-end, I prefer Node.js. However, PHP, Java, Go, Ruby/Rails, & Elm are technologies I am stoked about working with in the future. Outside of development, I love spending time with wife and puppies, working out, pretending like I have a sense of fashion, and planning my eventual journey around the world."
   },
   contact: {
     contactHeader: "Contact Me",
